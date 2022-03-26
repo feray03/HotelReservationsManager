@@ -4,6 +4,6 @@ namespace Data
 {
     public class Class1
     {
-        22
+        Hotel mng
     }
 }
