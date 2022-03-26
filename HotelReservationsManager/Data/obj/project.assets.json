@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Feray\\.nuget\\packages\\": {}
+    "C:\\Users\\monid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\Feray\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\obj\\",
+      "projectPath": "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\monid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Feray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\monid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
