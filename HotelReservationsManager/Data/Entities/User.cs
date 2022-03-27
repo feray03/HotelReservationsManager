@@ -37,6 +37,5 @@ namespace Data.Entities
         public bool IsActive { get; set; }
         public bool IsAdmin { get; set; }
         public DateTime? FiredDate { get; set; }
-
     }
 }
