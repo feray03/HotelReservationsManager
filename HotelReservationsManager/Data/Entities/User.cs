@@ -10,6 +10,7 @@ namespace Data.Entities
         public User()
         {
 
+
         }
 
         public User(User user)
