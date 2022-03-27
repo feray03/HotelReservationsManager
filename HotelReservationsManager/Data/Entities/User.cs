@@ -38,6 +38,7 @@ namespace Data.Entities
         public bool IsAdmin { get; set; }
         public DateTime? FiredDate { get; set; }
         public int MyProperty { get; set; }
+        public int MyProperty { get; set; }
 
     }
 }
