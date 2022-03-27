@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Data.Entities
 {
-    class Reservation
+     public class Reservation
     {
+
     }
 }
