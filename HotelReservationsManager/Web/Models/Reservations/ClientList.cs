@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Web.Models.Reservations
 {
-    public class ClientList
+    public enum ClientList
     {
     }
 }

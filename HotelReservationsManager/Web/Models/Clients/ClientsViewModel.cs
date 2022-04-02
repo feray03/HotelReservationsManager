@@ -7,5 +7,6 @@ namespace Web.Models.Clients
 {
     public class ClientsViewModel
     {
+
     }
 }
