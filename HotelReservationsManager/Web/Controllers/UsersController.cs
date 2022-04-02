@@ -10,7 +10,7 @@ using Data.Entities;
 
 namespace Web.Controllers
 {
-    public class UsersController
+    public class UsersController : Controller
     {
         
     }
