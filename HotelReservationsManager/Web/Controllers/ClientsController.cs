@@ -8,6 +8,6 @@ namespace Web.Controllers
 {
     public class ClientsController : Controller
     {
-
+        public int MyProperty { get; set; }
     }
 }
