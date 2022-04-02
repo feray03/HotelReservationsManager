@@ -22,8 +22,8 @@ namespace Web.Models.Reservations
         [DataType(DataType.Date)]
         public DateTime CheckOutDate { get; set; }
 
-        public bool HaveBreakFast { get; set; }
+        public bool IncludedBreakfast { get; set; }
         public bool IsAllInclusive { get; set; }
-        public decimal DueAmount { get; set; }
+        public decimal FinalPrice { get; set; }
     }
 }
