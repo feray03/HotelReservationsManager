@@ -7,5 +7,8 @@ namespace Web.Models.Rooms
 {
     public class RoomAllViewModel
     {
+        public PagerViewModel Pager { get; set; }
+
+        public ICollection<RoomsViewModel>Items { get; set; }
     }
 }
