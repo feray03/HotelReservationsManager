@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Web.Controllers
-{
+{   
     public class RoomsController : Controller
     {
         private readonly HotelDbContext _context;
