@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Web
-build_property.ProjectDir = C:\Users\monid\Source\Repos\feray03\HotelReservationsManager\HotelReservationsManager\Web\
+build_property.ProjectDir = C:\Users\monid\Source\Repos\HotelReservationsManager\HotelReservationsManager\Web\
