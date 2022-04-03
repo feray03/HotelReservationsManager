@@ -24,23 +24,17 @@ namespace Data.Entities
 
 
         }
-      [Range(1,5)] //може да има минимум 1 човек и максимум 5.
-      [Required]
+      
       public int Capacity { get; set; }
 
-      [Required]
       public string RoomType { get; set; }
 
-      [Required]
       public bool IsAvailable { get; set; }
 
-      [Required]
-      public double PriceForAdult { get; set; }
+      public decimal PriceForAdult { get; set; }
 
-      [Required]
-      public double PriceForKids { get; set; }
+      public decimal PriceForKids { get; set; }
 
-      [Required]
       public int Number { get; set; }
     }
 }
