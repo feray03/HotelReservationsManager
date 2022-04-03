@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj": {}
+    "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj": {
+    "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\monid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\monid\\Desktop\\HotelReservationsManager\\HotelReservationsManager\\Data\\obj\\",
+        "projectPath": "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Feray\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Feray\\Desktop\\ИТ кариера\\13 Модул\\HotelReservationsManager\\HotelReservationsManager\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\monid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Feray\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
