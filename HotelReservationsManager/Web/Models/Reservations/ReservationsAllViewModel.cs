@@ -7,5 +7,8 @@ namespace Web.Models.Reservations
 {
     public class ReservationsAllViewModel
     {
+        public PagerViewModel Pager { get; set; }
+
+        public ICollection<ReservationsViewModel> Items { get; set; }
     }
 }
