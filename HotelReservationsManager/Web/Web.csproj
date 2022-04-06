@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Data\Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Users\" />
+    <Folder Include="Views\Rooms\" />
+    <Folder Include="Views\Reservatins\" />
+  </ItemGroup>
+
 </Project>

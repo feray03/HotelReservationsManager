@@ -157,3 +157,6 @@ C:\Users\Feray\Desktop\ИТ кариера\13 Модул\HotelReservationsManage
 C:\Users\Feray\Desktop\ИТ кариера\13 Модул\HotelReservationsManager\HotelReservationsManager\Web\bin\Debug\net5.0\Data.pdb
 C:\Users\Feray\Desktop\ИТ кариера\13 Модул\HotelReservationsManager\HotelReservationsManager\Web\obj\Debug\net5.0\Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Feray\Desktop\ИТ кариера\13 Модул\HotelReservationsManager\HotelReservationsManager\Web\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Feray\Desktop\ИТ кариера\13 Модул\HotelReservationsManager\HotelReservationsManager\Web\obj\Debug\net5.0\Razor\Views\Clients\Create.cshtml.g.cs
+C:\Users\Feray\Desktop\ИТ кариера\13 Модул\HotelReservationsManager\HotelReservationsManager\Web\obj\Debug\net5.0\Razor\Views\Clients\Delete.cshtml.g.cs
+C:\Users\Feray\Desktop\ИТ кариера\13 Модул\HotelReservationsManager\HotelReservationsManager\Web\obj\Debug\net5.0\Razor\Views\Clients\Index.cshtml.g.cs
