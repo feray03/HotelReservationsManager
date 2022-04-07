@@ -25,18 +25,18 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsFree" /> @Html.DisplayNameFor(model => model.IsFree)
+                    <input class="form-check-input" asp-for="IsAvailable" /> @Html.DisplayNameFor(model => model.IsAvailable)
                 </label>
             </div>
             <div class="form-group">
-                <label asp-for="PriceAdult" class="control-label">price for adults</label>
-                <input asp-for="PriceAdult" class="form-control" />
-                <span asp-validation-for="PriceAdult" class="text-danger"></span>
+                <label asp-for="PriceForAdult" class="control-label">price for adults</label>
+                <input asp-for="PriceForAdult" class="form-control" />
+                <span asp-validation-for="PriceForAdult" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PriceChild" class="control-label">price for children</label>
-                <input asp-for="PriceChild" class="form-control" />
-                <span asp-validation-for="PriceChild" class="text-danger"></span>
+                <label asp-for="PriceForKids" class="control-label">price for children</label>
+                <input asp-for="PriceForKids" class="form-control" />
+                <span asp-validation-for="PriceForKids" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Number" class="control-label">number of room</label>
