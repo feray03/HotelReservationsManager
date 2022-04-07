@@ -41,6 +41,7 @@ namespace Web
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredUniqueChars = 0;
             })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<HotelDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -64,6 +65,7 @@ namespace Web
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -71,6 +73,7 @@ namespace Web
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }
