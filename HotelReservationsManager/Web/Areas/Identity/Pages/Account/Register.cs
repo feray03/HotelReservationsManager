@@ -84,9 +84,6 @@ namespace Web.Areas.Identity.Pages.Account
             [StringLength(10, ErrorMessage = " The {0} must be {2}")]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
-
-
-
         }
 
         public async Task OnGetAsync(string returnUrl = null)

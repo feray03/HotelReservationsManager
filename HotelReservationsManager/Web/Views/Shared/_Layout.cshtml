@@ -29,7 +29,7 @@
                             </li>
                         }
 
-                        @if (this.User.IsInRole("Admin"))
+                        @if (User.Identity.Name == "admin@abv.bg")
                         {
                             <li class="nav-item">
                                 <a class="nav-link nav-link-white" asp-controller="Users" asp-action="">Users</a>

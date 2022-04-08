@@ -7,7 +7,7 @@
 <h1>Reservations</h1>
 <br>
 
-@if (User.IsInRole("Admin"))
+@if (User.Identity.Name == "admin@abv.bg")
 {
     <p>
         <a asp-action="Create">Create New</a>
@@ -67,11 +67,11 @@
                 </td>
 
                 <td>
-                    @if (User.IsInRole("Admin"))
-                    {<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>}
+                    @if (User.Identity.Name == "admin@abv.bg")
+                    {<a asp-action="Edit" asp-route-id="@item.Id">Edit |</a>}
+                    @if (User.Identity.Name == "admin@abv.bg")
+                    {<a asp-action="Delete" asp-route-id="@item.Id">Delete |</a>}
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                    @if (User.IsInRole("Admin"))
-                    {<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>}
                 </td>
             </tr>
         }
