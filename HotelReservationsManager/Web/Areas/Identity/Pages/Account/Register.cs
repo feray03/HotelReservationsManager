@@ -32,18 +32,22 @@ namespace Web.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
             [Display(Name = "First name")]
             public string FirstName { get; set; }
 
             [Required]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
             [Display(Name = "Middle name")]
             public string MiddleName { get; set; }
 
             [Required]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
             [Display(Name = "Last name")]
             public string LastName { get; set; }
 
             [Required]
+            [StringLength(10, ErrorMessage = " The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 5)]
             [Display(Name = "EGN")]
             public string EGN { get; set; }
 
@@ -53,7 +57,7 @@ namespace Web.Areas.Identity.Pages.Account
 
 
             [Display(Name = "Activate")]
-            public bool isActive { get; set; }
+            public bool IsActive { get; set; }
 
 
             [Display(Name = "Make it administrator")]
@@ -71,6 +75,7 @@ namespace Web.Areas.Identity.Pages.Account
             public string Password { get; set; }
 
             [Required]
+            [StringLength(10, ErrorMessage = " The {0} must be {2}")]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
 
@@ -89,7 +94,7 @@ namespace Web.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                var user = new User { Id = Guid.NewGuid().ToString(), UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, MiddleName = Input.MiddleName, LastName = Input.LastName, EGN = Input.EGN, HireDate = Input.HireDate, IsActive = Input.isActive, IsAdmin = Input.IsAdmin, PhoneNumber = Input.PhoneNumber };
+                var user = new User { Id = Guid.NewGuid().ToString(), UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, MiddleName = Input.MiddleName, LastName = Input.LastName, EGN = Input.EGN, HireDate = Input.HireDate, IsActive = Input.IsActive, IsAdmin = Input.IsAdmin, PhoneNumber = Input.PhoneNumber };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

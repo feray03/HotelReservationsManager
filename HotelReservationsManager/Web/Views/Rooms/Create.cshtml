@@ -1,13 +1,10 @@
 ﻿@model Data.Entities.Room
 @using Data.Entities
 
-@{
-    ViewData["Title"] = "Create";
-}
+@{ ViewData["Title"] = "Create"; }
 
-<h1>Create</h1>
+<h1>Create Room</h1>
 
-<h4>Room</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,8 +16,10 @@
                 <span asp-validation-for="Capacity" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="RoomType" class="control-label"></label>
-                <select asp-for="RoomType" asp-items="Html.GetEnumSelectList<RoomTypeEnum>()"></select>
+                <label asp-for="RoomType" class="control-label">Choose a type of Room:</label>
+                <select asp-for="RoomType" asp-items="Html.GetEnumSelectList<RoomTypeEnum>()">
+                    <option selected="selected" value="">Please select</option>
+                </select>
                 <span asp-validation-for="RoomType" class="text-danger"></span>
             </div>
             <div class="form-group form-check">

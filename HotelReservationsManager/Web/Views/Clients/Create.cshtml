@@ -1,37 +1,36 @@
 ﻿@model Data.Entities.Client
-@{
-    ViewData["Title"] = "Create";
- }
 
-<h1>Create</h1>
+@{ ViewData["Title"] = "Create"; }
 
-<h4>Client</h4>
+<h1>Create Client</h1>
+
+<h4>ClientsCreateViewModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <from asp-action="Create">
+        <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FirstName" class="controler-label"></label>
+                <label asp-for="FirstName" class="control-label"></label>
                 <input asp-for="FirstName" class="form-control" />
                 <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LastName" class="controler-label"></label>
-                <input asp-for="LastName" class="from-control" />
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PhoneNumber" class="controler-label"></label>
-                <input asp-for="PhoneNumber" class="from-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="controler-label"></label>
-                <input asp-for="Email" class="from-control" />
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group form-check" >
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="IsAdult" /> @Html.DisplayNameFor(model => model.IsAdult)
                 </label>
@@ -39,7 +38,7 @@
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
-        </from>
+        </form>
     </div>
 </div>
 
@@ -48,5 +47,5 @@
 </div>
 
 @section Scripts {
-   @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

@@ -31,9 +31,9 @@ namespace Data.Entities
 
       public bool IsAvailable { get; set; }
 
-      public decimal PriceForAdult { get; set; }
+      public double PriceForAdult { get; set; }
 
-      public decimal PriceForKids { get; set; }
+      public double PriceForKids { get; set; }
 
       public int Number { get; set; }
     }

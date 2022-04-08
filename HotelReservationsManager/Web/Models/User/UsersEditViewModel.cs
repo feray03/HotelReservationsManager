@@ -26,8 +26,8 @@ namespace Web.Models.User
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
-        [Display(Name = "Second Name")]
-        public string SecondName { get; set; }
+        [Display(Name = "Middle Name")]
+        public string MiddleName { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
@@ -36,12 +36,12 @@ namespace Web.Models.User
 
         [Required]
         [StringLength(10, ErrorMessage = " The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 5)]
-        [Display(Name = "UCN")]
-        public string UCN { get; set; }
+        [Display(Name = "EGN")]
+        public string EGN { get; set; }
 
         [Required]
         [StringLength(10, ErrorMessage = " The {0} must be {2}")]
-        [Display(Name = "Number")]
+        [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
 
         [Required]

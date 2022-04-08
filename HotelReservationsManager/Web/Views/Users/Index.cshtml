@@ -10,22 +10,22 @@
     {
         if (item.IsAdmin == true)
         {
-<p>
-    <a asp-area="Identity" asp-page="/Account/Register">Create new user</a>
-</p>
+            <p>
+                <a asp-area="Identity" asp-page="/Account/Register">Create new user</a>
+            </p>
 
-                        <p>
-                            <a asp-action="EditUsers"> Edit users</a>
-                        </p>
-                                                <p>
-                                                    <a asp-action="DeleteUsers"> Delete users</a>
-                                                </p>
-                                                                        <p>
-                                                                            <a asp-action="LockUsers"> Lock users</a>
-                                                                        </p>}
-                                                                                            break;
-                                                                                        }
-                                                                                    }
+            <p>
+                 <a asp-action="EditUsers"> Edit users</a>
+            </p>
+            <p>
+                <a asp-action="DeleteUsers"> Delete users</a>
+            </p>
+            <p>
+                <a asp-action="LockUsers"> Lock users</a>
+            </p>
+        }                                                                                 break;
+    }
+}
 
 <table class="table">
     <thead>
@@ -58,33 +58,34 @@
 
         @foreach (var item in Model)
         {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.FirstName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.MiddleName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.LastName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.IsActive)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.UserName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Email)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.PhoneNumber)
-    </td>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MiddleName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
 
-    <td>
-        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-    </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                </td>
 
-</tr>}
+            </tr>
+        }
     </tbody>
 </table>

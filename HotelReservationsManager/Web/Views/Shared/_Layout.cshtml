@@ -32,7 +32,7 @@
                         @if (this.User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link nav-link-white" asp-controller="Users" asp-action="All">Users</a>
+                                <a class="nav-link nav-link-white" asp-controller="Users" asp-action="">Users</a>
                             </li>
                         }
 
@@ -41,13 +41,13 @@
                             if (!this.User.IsInRole("NotActive"))
                             {
                                   <li class="nav-item">
-                                       <a class="nav-link nav-link-white" asp-controller="Clients" asp-action="All">Clients</a>
+                                       <a class="nav-link nav-link-white" asp-controller="Clients" asp-action="">Clients</a>
                                   </li>
                                   <li class="nav-item">
-                                       <a class="nav-link nav-link-white" asp-controller="Rooms" asp-action="All">Rooms</a>
+                                       <a class="nav-link nav-link-white" asp-controller="Rooms" asp-action="">Rooms</a>
                                   </li>
                                   <li class="nav-item">
-                                       <a class="nav-link nav-link-white" asp-controller="Reservations" asp-action="All">Reservations</a>
+                                       <a class="nav-link nav-link-white" asp-controller="Reservations" asp-action="">Reservations</a>
                                   </li>
                             }
                         
