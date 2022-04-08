@@ -59,10 +59,6 @@ namespace Web.Areas.Identity.Pages.Account
             [Display(Name = "Activate")]
             public bool IsActive { get; set; }
 
-
-            [Display(Name = "Make it administrator")]
-            public bool IsAdmin { get; set; }
-
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -97,7 +93,7 @@ namespace Web.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                var user = new User { Id = Guid.NewGuid().ToString(), UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, MiddleName = Input.MiddleName, LastName = Input.LastName, EGN = Input.EGN, HireDate = Input.HireDate, IsActive = Input.IsActive, IsAdmin = Input.IsAdmin, PhoneNumber = Input.PhoneNumber };
+                var user = new User { Id = Guid.NewGuid().ToString(), UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, MiddleName = Input.MiddleName, LastName = Input.LastName, EGN = Input.EGN, HireDate = Input.HireDate, IsActive = Input.IsActive, PhoneNumber = Input.PhoneNumber };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
