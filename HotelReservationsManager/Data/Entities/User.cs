@@ -18,6 +18,7 @@ namespace Data.Entities
             Id = user.Id;
             UserName = user.UserName;
             PasswordHash = user.PasswordHash;
+            //Role = user.Role;
             FirstName = user.FirstName;
             MiddleName = user.MiddleName;
             LastName = user.LastName;
@@ -39,5 +40,6 @@ namespace Data.Entities
         public bool IsActive { get; set; }
         public bool IsAdmin { get; set; }
         public DateTime? FiredDate { get; set; }
+       // public string Role { get; set; }
     }
 }

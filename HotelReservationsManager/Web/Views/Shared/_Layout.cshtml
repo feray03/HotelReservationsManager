@@ -40,28 +40,30 @@
                         {
                             if (!this.User.IsInRole("NotActive"))
                             {
-                                  <li class="nav-item">
-                                       <a class="nav-link nav-link-white" asp-controller="Clients" asp-action="">Clients</a>
-                                  </li>
-                                  <li class="nav-item">
-                                       <a class="nav-link nav-link-white" asp-controller="Rooms" asp-action="">Rooms</a>
-                                  </li>
-                                  <li class="nav-item">
-                                       <a class="nav-link nav-link-white" asp-controller="Reservations" asp-action="">Reservations</a>
-                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-white" asp-controller="Clients" asp-action="">Clients</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-white" asp-controller="Rooms" asp-action="">Rooms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-white" asp-controller="Reservations" asp-action="">Reservations</a>
+                                </li>
                             }
-                        
+
                             <li class="nav-item">
-                                 <a class="nav-link nav-link-white" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+                                <a class="nav-link nav-link-white" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
                             </li>
                         }
-                        @*@if (!this.User.Identity.IsAuthenticated)
-        {
-            <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Contact us</a>
-            </li>
-        }*@
+
+                        @if (!this.User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Contact us</a>
+                            </li>
+                        }
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>

@@ -28,7 +28,7 @@ namespace Data.Entities
         public DateTime CheckOutDate { get; set; }
         public bool IncludedBreakfast { get; set; }
         public bool IsAllInclusive { get; set; }
-        public decimal FinalPrice { get; set; }
+        public double FinalPrice { get; set; }
         public ICollection<ClientReservation> ClientReservations { get; set; }
     }
 }

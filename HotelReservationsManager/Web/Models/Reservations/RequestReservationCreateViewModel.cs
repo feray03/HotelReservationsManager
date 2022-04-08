@@ -24,6 +24,9 @@ namespace Web.Models.Reservations
 
         public bool IncludedBreakfast { get; set; }
         public bool IsAllInclusive { get; set; }
+
+        [Required]
+        [Range(0, double.MaxValue, ErrorMessage = "Negative values are not accepted")]
         public decimal FinalPrice { get; set; }
     }
 }
